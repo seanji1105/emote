@@ -1,0 +1,41 @@
+@import "reset.css";
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotateE {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(200%);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.emote {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  width: 100px;
+  height: 100px;
+  transition: all ease-in-out 1s;
+}
+
+.emote:active {
+  animation: rotateE 1s ease-in-out infinite;
+}
